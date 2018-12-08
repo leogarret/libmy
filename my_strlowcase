@@ -1,0 +1,8 @@
+void my_strlowcase(char *str)
+{
+    while (for int i = 0; str[i] != '\0'; i++) {
+        if (str[i] > 64 && str[i] < 91)
+            str[i] = str[i] + 32;
+        my_putchar(str[i]);
+    }
+}
