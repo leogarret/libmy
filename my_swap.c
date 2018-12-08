@@ -1,15 +1,14 @@
 /*
 ** EPITECH PROJECT, 2018
-** my_swap
+** Made by Léo Garret (leogarret@hotmail.com)
 ** File description:
-** swap two values
+** my_swap.c
 */
 
 void my_swap(int *a, int *b)
 {
     int temp = *a;
-    int temp2 = *b;
-    
-    *a = temp2;
+
+    *a = *b;
     *b = temp;
 }
