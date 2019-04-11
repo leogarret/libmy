@@ -63,12 +63,3 @@ char **my_str_to_word_array(char *str, char sep)
     word_array[++c] = NULL;
     return (word_array);
 }
-
-int main(void)
-{
-    char **arr = my_str_to_word_array("** vvvvv *************** $$$$$$$$$$$$$$$$$", ' ');
-
-    for (int i = 0; arr[i]; ++i)
-        puts(arr[i]);
-    return (0);
-}
