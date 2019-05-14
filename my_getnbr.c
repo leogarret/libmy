@@ -7,10 +7,9 @@
 
 int my_getnbr(char *str)
 {
-    int result = 0;
-    int neg = (*str == '-') ? 1 && str++ : 0;
+    int tab[2] = {0, *str == '-' ? 1 && str++ : 0};
 
-    for (; *str; str++)
-        result = (result * 10) + (*str - 48);
-    return (neg ? -result : result);
+    while (*str)
+        *tab = (*tab * 10) + (*str++ - 48);
+    return (tab[1] ? -(*tab) : *tab);
 }
